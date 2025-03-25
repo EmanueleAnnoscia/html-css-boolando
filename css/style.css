@@ -25,20 +25,26 @@ img{
 /* BANNER */
 
 .banner{
-    height: 80px;
+    height: 50px;
     background-color: orange;
     position: sticky;
 }
 
 .banner-box{
     display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
 
 }
 
-.header-flex{
+.customers-type{
+    list-style: none;
+}
 
-    /* debug */
-    border: 1px solid black;
+.logo{
+    height: 35px;
 }
 
 
@@ -54,9 +60,6 @@ img{
     width: calc((100%-40px)/3);
     margin-top: 35px;
 
-    /* DEBUG */
-    border: 1px solid black;
-
 }
 
 .card{
@@ -66,11 +69,6 @@ img{
     /* flex: 1; */
     height: 500px;
     position: relative;
-    
-    
-    /* DEBUG */
-    border: 1px solid black;
-
 }
 
 .discount{
@@ -108,7 +106,7 @@ img{
     z-index: 25;
 }
 
-.heart:hover .heart-hover{
+.heart:hover {
     color: red;
 }
 
@@ -139,6 +137,5 @@ img{
 .price{
     max-height: 20%;
     flex: 1;
-    /* debug */
-    border: 1px solid black;
+
 }
