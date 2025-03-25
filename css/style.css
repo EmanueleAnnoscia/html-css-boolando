@@ -47,6 +47,15 @@ img{
     height: 35px;
 }
 
+.social-list{
+    list-style: none;
+    display: flex;
+    list-style-type: none;
+}
+
+.social-list ul {
+    margin: 10px;
+}
 
 /* CARD SECTION */
 
@@ -138,4 +147,32 @@ img{
     max-height: 20%;
     flex: 1;
 
+}
+
+.footer-banner{
+    margin: 0 auto;
+    height: 90px;
+}
+
+
+
+.footer-banner{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.info-boolando{
+    display: flex;
+    margin: 15px;
+    list-style-type: none;
+    max-width: 50%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+li{
+    
+    margin: 7px;
 }
