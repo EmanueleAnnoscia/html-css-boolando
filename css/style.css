@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.new-price{
+    color: orangered;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.old-price{
+    color: black;
+    text-decoration: line-through;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* BANNER */
+
+.banner{
+    height: 80px;
+    background-color: orange;
+    position: sticky;
+}
+
+.banner-box{
+    display: flex;
+
+}
+
+.header-flex{
+
+    /* debug */
+    border: 1px solid black;
+}
+
+
+/* CARD SECTION */
+
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+    width: calc((100%-40px)/3);
+    margin-top: 35px;
+
+    /* DEBUG */
+    border: 1px solid black;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    height: 500px;
+    position: relative;
+    
+    
+    /* DEBUG */
+    border: 1px solid black;
+
+}
+
+.discount{
+    color: white;
+    background-color: red;
+    position: absolute;
+    left: 5px;
+    bottom: 25%;
+    font-size: small;
+}
+
+.sustain{
+    color: white;
+    background-color: rgb(34, 184, 69);
+    position: absolute;
+    left: 40px;
+    bottom: 25%;
+    font-size: small;
+}
+
+.only-sustain{
+    position: absolute;
+    left: 5px;
+    bottom: 25%;
+    color: white;
+    background-color: rgb(34, 184, 69);
+}
+
+.heart{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 25;
+}
+
+.heart:hover .heart-hover{
+    color: red;
+}
+
+/* .heart-hover{
+    color: red;
+}  */
+
+.static-img{
+    flex: 1;
+    height: auto;
+    max-height: 80%;
+}
+
+.img-hover{
+    flex: 1; /* Occupa lo spazio disponibile */
+    height: auto;
+    /* max-height: 54.5%; */
+    display: none;
+    position: absolute;
+}
+
+.card:hover .img-hover{
+    display: block;
+}
+
+/* .img-non hover */
+
+.price{
+    max-height: 20%;
+    flex: 1;
+    /* debug */
+    border: 1px solid black;
+}
